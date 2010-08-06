@@ -105,7 +105,7 @@ void libobjc_log( char * file, int line, libobjc_log_opt opt, NSString * fmt, ..
 #pragma mark -- Macros
 
 #ifdef LIBOBJC_LOG
-#if defined( LIBOBJC_NO_CONSOLE )
+#if defined( LIBOBJC_LOG_NO_CONSOLE )
 
 /*!
     @define         NSLog
@@ -114,7 +114,7 @@ void libobjc_log( char * file, int line, libobjc_log_opt opt, NSString * fmt, ..
 #define NSLog( ... ) libobjc_log( __FILE__, __LINE__, LIBOBJC_LOG_OPT_CONSOLE_IGNORE, __VA_ARGS__ )
 
 #else
-#if defined( LIBOBJC_CONSOLE_STD )
+#if defined( LIBOBJC_LOG_CONSOLE_STD )
 
 /*!
     @define         NSLog
