@@ -40,6 +40,8 @@
 		052E097A12D50A90004244A5 /* expand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = expand.h; sourceTree = "<group>"; };
 		052E09CC12D52202004244A5 /* help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = help.h; sourceTree = "<group>"; };
 		052E09CD12D52258004244A5 /* help.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = help.c; sourceTree = "<group>"; };
+		054DCE9212DCAD7C0053898A /* libio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libio.c; sourceTree = "<group>"; };
+		054DCE9412DCAD880053898A /* libio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libio.h; sourceTree = "<group>"; };
 		0554D7D512A9BFAC006FD51B /* test.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = test.sh; sourceTree = "<group>"; };
 		0572CA3012D6434300AB4BD0 /* libprogressbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libprogressbar.h; sourceTree = "<group>"; };
 		0572CA3112D6434F00AB4BD0 /* libprogressbar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libprogressbar.c; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				0599E2DE1279B84E004C47CF /* include */,
 				052D59411299764D00451F89 /* libdebug.c */,
+				054DCE9212DCAD7C0053898A /* libio.c */,
 				0572CA3112D6434F00AB4BD0 /* libprogressbar.c */,
 			);
 			path = lib;
@@ -167,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				052D59421299765600451F89 /* libdebug.h */,
+				054DCE9412DCAD880053898A /* libio.h */,
 				0572CA3012D6434300AB4BD0 /* libprogressbar.h */,
 			);
 			path = include;
