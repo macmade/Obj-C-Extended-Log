@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0460"
+   LastUpgradeVersion = "0600"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D28A88AD04BDD90700651E21"
-               BuildableName = "egz"
-               BlueprintName = "egz"
+               BuildableName = "libobjc-log"
+               BlueprintName = "libobjc-log"
                ReferencedContainer = "container:libobjc-log.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

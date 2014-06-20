@@ -70,6 +70,7 @@ static void __libobjc_logv( char * file, int line, libobjc_log_opt opt, NSString
     int                 thread_no;
     NSAutoreleasePool * arp;
     NSDate            * date;
+    NSDateFormatter   * formatter;
     NSThread          * thread;
     NSString          * thread_name;
     NSString          * thread_descr;
@@ -99,9 +100,13 @@ static void __libobjc_logv( char * file, int line, libobjc_log_opt opt, NSString
         thread_name = [ NSString stringWithFormat: @" - %@", thread_name ];
     }
     
-    date     = [ NSDate date ];
-    time_str = [ date descriptionWithCalendarFormat: @"%Y-%m-%d %H:%M:%S.%F" timeZone: nil locale: nil ];
-    logMsg   = [ NSString stringWithFormat:
+    date      = [ NSDate date ];
+    formatter = [ [ NSDateFormatter new ] autorelease ];
+    
+    [ formatter setDateFormat: @"YYYY-MM-dd HH:mm:ss.SSS" ];
+    
+    time_str  = [ formatter stringFromDate: date ];
+    logMsg    = [ NSString stringWithFormat:
         @"--------------------------------------------------\n"
         @" Log informations:\n"
         @"--------------------------------------------------\n"
@@ -124,6 +129,8 @@ static void __libobjc_logv( char * file, int line, libobjc_log_opt opt, NSString
         [ time_str UTF8String ],
         [ msg UTF8String ]
     ];
+    
+    //NSLog( @"ok" );
     
     if( __libobjc_log_lock == nil )
     {
