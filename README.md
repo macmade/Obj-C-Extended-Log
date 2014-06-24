@@ -1,7 +1,7 @@
 Obj-C Extended Log
 ==================
 
-[![Build Status](https://travis-ci.org/macmade/Obj-C-Extended-Log.svg?branch=master)](https://travis-ci.org/macmade/Obj-C-Extended-Log)
+[![Build Status](https://img.shields.io/travis/macmade/Obj-C-Extended-Log.svg?branch=master&style=flat)](https://travis-ci.org/macmade/Obj-C-Extended-Log)
 
 About
 -----
